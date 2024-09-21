@@ -3,9 +3,12 @@
 
 class Enemy : public Attacker {
 public:
-	virtual bool isEnemy() override = 0;
+	virtual bool isEnemy();
 
 private:
 
 };
 
+bool Enemy::isEnemy() {
+	return is_enemy_;
+}

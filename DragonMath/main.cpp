@@ -6,5 +6,6 @@
 
 int main() {
 	Hero hero;
-	hero.becomeEnemy();
+	Enemy drag;
+	drag.isEnemy();
 }
