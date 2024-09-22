@@ -1,14 +1,14 @@
 #pragma once
 #include "attacker.h"
 
-class Enemy : public Attacker {
+class Enemy : virtual public Attacker {
 public:
-	virtual bool isEnemy();
+	virtual bool isEnemy() const override;
 
 private:
 
 };
 
-bool Enemy::isEnemy() {
+bool Enemy::isEnemy() const {
 	return is_enemy_;
 }

@@ -1,14 +1,14 @@
 #pragma once
 #include "dragon.h"
 
-class RedDragon : public Dragon {
+class RedDragon : virtual public Dragon {
 public:
 	RedDragon();
 	virtual std::pair<int, int> question() override final;
 };
 
 RedDragon::RedDragon() {
-    operator_ = '-';
+    operation_ = '-';
 }
 
 std::pair<int, int> RedDragon::question() {

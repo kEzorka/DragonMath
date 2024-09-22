@@ -2,14 +2,20 @@
 
 #include "attacker.h"
 
-class Hero : public Attacker {
+class Hero : virtual public Attacker {
 public:
-	Hero();
-	virtual bool isEnemy() override final;
+	Hero() = default;
+	Hero(const Hero&) = default;
+	Hero(Hero&&) = default;
+
+	virtual bool isEnemy() const override final;
+
+	Hero& operator=(const Hero&) = default;
+	Hero& operator=(Hero&&) = default;
+
+	virtual ~Hero() = default;
 };
 
-Hero::Hero() {}
-
-bool Hero::isEnemy() {
+bool Hero::isEnemy() const {
 	return is_enemy_;
 }

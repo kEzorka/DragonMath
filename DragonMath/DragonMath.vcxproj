@@ -137,7 +137,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="frontend\src\game_window.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="frontend\src\main_window.cpp" />
+    <ClCompile Include="frontend\src\paused_window.cpp" />
+    <ClCompile Include="frontend\src\push_button.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="frontend\app\main_window.h" />
+    <ClInclude Include="frontend\app\paused_window.h" />
+    <ClInclude Include="frontend\app\game_wndow.h" />
+    <ClInclude Include="frontend\app\push_button.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
