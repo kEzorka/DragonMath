@@ -158,6 +158,25 @@
     <ClInclude Include="frontend\app\push_button.h" />
     <ClInclude Include="frontend\app\TextBox.h" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="dependencies\SFML\lib\Debug\sfml-audio-s-d.pdb" />
+    <None Include="dependencies\SFML\lib\Debug\sfml-audio-s.pdb" />
+    <None Include="dependencies\SFML\lib\Debug\sfml-audio.pdb" />
+    <None Include="dependencies\SFML\lib\Debug\sfml-graphics-s-d.pdb" />
+    <None Include="dependencies\SFML\lib\Debug\sfml-graphics-s.pdb" />
+    <None Include="dependencies\SFML\lib\Debug\sfml-graphics.pdb" />
+    <None Include="dependencies\SFML\lib\Debug\sfml-main-d.pdb" />
+    <None Include="dependencies\SFML\lib\Debug\sfml-main-s.pdb" />
+    <None Include="dependencies\SFML\lib\Debug\sfml-network-s-d.pdb" />
+    <None Include="dependencies\SFML\lib\Debug\sfml-network-s.pdb" />
+    <None Include="dependencies\SFML\lib\Debug\sfml-network.pdb" />
+    <None Include="dependencies\SFML\lib\Debug\sfml-system-s-d.pdb" />
+    <None Include="dependencies\SFML\lib\Debug\sfml-system-s.pdb" />
+    <None Include="dependencies\SFML\lib\Debug\sfml-system.pdb" />
+    <None Include="dependencies\SFML\lib\Debug\sfml-window-s-d.pdb" />
+    <None Include="dependencies\SFML\lib\Debug\sfml-window-s.pdb" />
+    <None Include="dependencies\SFML\lib\Debug\sfml-window.pdb" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
