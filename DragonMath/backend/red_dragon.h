@@ -3,17 +3,13 @@
 
 class RedDragon : virtual public Dragon {
 public:
-	RedDragon();
-	virtual std::pair<int, int> question() override final;
+    RedDragon() {
+        operation_ = '-';
+    }
+	virtual std::pair<int, int> question() override final {
+        int first_summand = RandNum() % 100;
+        int second_summand = RandNum() % 100;
+        answer_ = first_summand - second_summand;
+        return std::make_pair(first_summand, second_summand);
+    }
 };
-
-RedDragon::RedDragon() {
-    operation_ = '-';
-}
-
-std::pair<int, int> RedDragon::question() {
-    int first_summand = RandNum() % 10000;
-    int second_summand = RandNum() % 10000;
-    answer_ = first_summand - second_summand;
-    return std::make_pair(first_summand, second_summand);
-}

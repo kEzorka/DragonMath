@@ -16,8 +16,9 @@ public:
 	sf::Vector2f getSize() const;
 	std::string getString() const;
 	sf::Vector2f getPosition() const;
+	sf::Color getColor() const;
 
-	bool isClicked(sf::RenderWindow& window);
+	bool isClicked();
 
 	void draw() const;
 

@@ -30,6 +30,9 @@
     <ClCompile Include="frontend\src\push_button.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="frontend\src\TextBox.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="frontend\app\main_window.h">
@@ -38,10 +41,34 @@
     <ClInclude Include="frontend\app\paused_window.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="frontend\app\game_wndow.h">
+    <ClInclude Include="frontend\app\push_button.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="frontend\app\push_button.h">
+    <ClInclude Include="frontend\app\game_window.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="frontend\app\TextBox.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="backend\attacker.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="backend\black_dragon.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="backend\dragon.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="backend\enemy.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="backend\green_dragon.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="backend\hero.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="backend\red_dragon.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>

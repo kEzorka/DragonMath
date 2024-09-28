@@ -116,7 +116,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>sfml-graphics-s-d.lib	;sfml-window-s-d.lib;sfml-system-s-d.lib;sfml-audio-s-d.lib;sfml-network-s-d.lib;opengl32.lib;freetype.lib;winmm.lib;gdi32.lib;openal32.lib;flac.lib;vorbisenc.lib;vorbisfile.lib;vorbis.lib;ogg.lib	;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>sfml-graphics-s-d.lib;sfml-window-s-d.lib;sfml-system-s-d.lib;sfml-audio-s-d.lib;sfml-network-s-d.lib;opengl32.lib;freetype.lib;winmm.lib;gdi32.lib;openal32.lib;flac.lib;vorbisenc.lib;vorbisfile.lib;vorbis.lib;ogg.lib	;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -142,12 +142,21 @@
     <ClCompile Include="frontend\src\main_window.cpp" />
     <ClCompile Include="frontend\src\paused_window.cpp" />
     <ClCompile Include="frontend\src\push_button.cpp" />
+    <ClCompile Include="frontend\src\TextBox.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="backend\attacker.h" />
+    <ClInclude Include="backend\black_dragon.h" />
+    <ClInclude Include="backend\dragon.h" />
+    <ClInclude Include="backend\enemy.h" />
+    <ClInclude Include="backend\green_dragon.h" />
+    <ClInclude Include="backend\hero.h" />
+    <ClInclude Include="backend\red_dragon.h" />
     <ClInclude Include="frontend\app\main_window.h" />
     <ClInclude Include="frontend\app\paused_window.h" />
-    <ClInclude Include="frontend\app\game_wndow.h" />
+    <ClInclude Include="frontend\app\game_window.h" />
     <ClInclude Include="frontend\app\push_button.h" />
+    <ClInclude Include="frontend\app\TextBox.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
